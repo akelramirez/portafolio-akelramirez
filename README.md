@@ -80,24 +80,9 @@ Edita el archivo `data/projects.json`. Cada elemento debe ser un objeto con al m
 - Output directory: `build`
 - `api/projects.js` será detectado como función serverless por Vercel y servirá `/api/projects` en producción.
 
-## Sugerencias y mejoras rápidas
-- Añadir `.gitignore` con `node_modules/` y `.env` si no existe.
-- Añadir scripts convenientes en `package.json`:
-
-```json
-"scripts": {
-	"dev": "vite",
-	"build": "vite build",
-	"preview": "vite preview --port 5000",
-	"start-api": "node server.js"
-}
-```
-
-- Eliminar o mover los archivos `.astro` si ya no se usan para evitar confusión.
-
 ## Contribuir
 1) Haz fork y crea una rama: `git checkout -b feat/my-change`
 2) Haz tus cambios y commitea
 3) Abre un Pull Request describiendo los cambios
 
-Autor: Akel Ramirez
+## Autor: Akel Ramirez
