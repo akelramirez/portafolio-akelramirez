@@ -9,7 +9,7 @@ export function Projects() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/projects')
+    fetch('/api/projects')
       .then((res) => {
         if (!res.ok) throw new Error('Error al obtener proyectos');
         return res.json();

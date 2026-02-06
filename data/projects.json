@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Challenge Amigo Secreto",
+    "description": "Este proyecto es una aplicación web sencilla en JavaScript que permite: Agregar nombres de amigos a una lista.Mostrar la lista en pantalla.Realizar un sorteo aleatorio para elegir a un amigo.",
+    "image_url": "https://niaxus.com/wp-content/uploads/2025/06/fc24f-programacion-web.jpg",
+    "project_url": "https://github.com/akelramirez/challenge-amigo-secreto"
+  },
+  {
+    "id": 2,
+    "title": "Food Express",
+    "description": "Página de servicio de comida a domicilio.",
+    "image_url": "https://niaxus.com/wp-content/uploads/2025/06/fc24f-programacion-web.jpg",
+    "project_url": "https://github.com/akelramirez/page-food-express"
+  },
+  {
+    "id": 3,
+    "title": "Challenge Conversor de Monedas",
+    "description": "Aplicación de consola en Java para convertir cantidades entre varias monedas usando la API de ExchangeRate (pair)",
+    "image_url": "https://niaxus.com/wp-content/uploads/2025/06/fc24f-programacion-web.jpg",
+    "project_url": "https://github.com/akelramirez/challenge-conversor-de-monedas"
+  },
+  {
+    "id": 4,
+    "title": "Calculadora Web",
+    "description": "Sistema de Calculadora utilizando HTML, CSS y JavaScript.",
+    "image_url": "https://niaxus.com/wp-content/uploads/2025/06/fc24f-programacion-web.jpg",
+    "project_url": "https://github.com/akelramirez/casopractico-uvm-4.5"
+  },
+  {
+    "id": 5,
+    "title": "Gestor de Usuarios",
+    "description": "Aplicación web desarrollada con HTML, CSS y JavaScript que permite visualizar y administrar usuarios mediante una interfaz moderna y responsiva",
+    "image_url": "https://niaxus.com/wp-content/uploads/2025/06/fc24f-programacion-web.jpg",
+    "project_url": "https://github.com/akelramirez/casopractico24.5"
+  },
+  {
+    "id": 6,
+    "title": "Iteración de Arreglos de Libros",
+    "description": "Iteración de Arreglos de Libros y Consumo de API.",
+    "image_url": "https://niaxus.com/wp-content/uploads/2025/06/fc24f-programacion-web.jpg",
+    "project_url": "https://github.com/akelramirez/ejercicio-4.3-array-libros"
+  }
+]

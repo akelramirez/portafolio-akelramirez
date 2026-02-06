@@ -1,15 +1,14 @@
 # Portafolio - Akel Ramirez
 
-Este repositorio contiene un frontend creado con Vite + React y una API ligera en Express para exponer proyectos desde una base de datos MySQL.
+Este repositorio contiene un frontend creado con Vite + React y una API ligera en Express para exponer proyectos desde un archivo JSON.
 
 Resumen rápido
 - Frontend: Vite + React (entrada en `src/main.tsx`).
-- API: `server.js` (Express) con endpoint `/api/projects` que consulta MySQL (`db/projects.sql`).
+- API: `api/projects.js` (Serverless Function) y `server.js` (Express local) con endpoint `/api/projects` que lee desde `data/projects.json`.
 - Nota: hay varios archivos `.astro` en `src/` — parecen remanentes de una migración. El pipeline actual NO usa Astro.
 
 Requisitos
 - Node.js (>=18 recomendado)
-- MySQL si quieres ejecutar la API localmente
 
 Comandos útiles
 - Instalar dependencias:
@@ -49,13 +48,12 @@ Despliegue en Vercel (recomendado para frontend estático)
 - He añadido `vercel.json` con configuración para usar `@vercel/static-build` y fallback SPA.
 
 API y despliegue
-- Vercel no mantiene procesos Express persistentes. Opciones:
-  1. Convertir `server.js` a una Serverless Function en `api/projects` (recomendado si quieres alojar todo en Vercel).
-  2. Mantener el backend en otra plataforma (Railway, Render, etc.) y configurar variables de entorno para que el frontend consuma esa API.
+- La API usa Serverless Functions de Vercel (`api/projects.js`) que leen desde `data/projects.json`.
+- Para desarrollo local, puedes usar `server.js` (Express) que también lee del mismo archivo JSON.
 
-Variables de entorno y seguridad
-- No subas credenciales al repo. Usa variables de entorno en Vercel (Settings → Environment Variables): `DB_HOST`, `DB_USER`, `DB_PASS`, `DB_NAME`, etc.
-- Añadí un archivo `.env` local con valores de ejemplo; NO lo subas. Añade `.env` a `.gitignore` si no está.
+Datos
+- Los proyectos están almacenados en `data/projects.json` (6 registros estáticos).
+- Para agregar más proyectos, edita directamente ese archivo JSON.
 
 Siguientes pasos sugeridos (puedo hacerlo por ti)
 - Añadir `.env` a `.gitignore` (evitar commits accidentales).

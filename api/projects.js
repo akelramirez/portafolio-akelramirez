@@ -1,15 +1,5 @@
-const mysql = require('mysql2/promise');
-
-// Pool a nivel de módulo para reutilizar conexiones entre invocaciones
-const pool = mysql.createPool({
-  host: process.env.DB_HOST || 'localhost',
-  user: process.env.DB_USER || 'usuario',
-  password: process.env.DB_PASS || 'password123',
-  database: process.env.DB_NAME || 'ejemplo_db',
-  waitForConnections: true,
-  connectionLimit: 5,
-  queueLimit: 0,
-});
+const fs = require('fs');
+const path = require('path');
 
 module.exports = async (req, res) => {
   // CORS básico (ajusta en producción según tu dominio)
@@ -28,10 +18,14 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const [rows] = await pool.query('SELECT * FROM projects');
-    res.status(200).json(rows);
+    // Leer archivo JSON con los proyectos
+    const dataPath = path.join(process.cwd(), 'data', 'projects.json');
+    const fileContent = fs.readFileSync(dataPath, 'utf-8');
+    const projects = JSON.parse(fileContent);
+    
+    res.status(200).json(projects);
   } catch (err) {
-    console.error('DB query error:', err);
+    console.error('Error reading projects file:', err);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 };
