@@ -1,0 +1,117 @@
+---
+---
+import profileImage from '../assets/profile.png';
+---
+<header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-md z-50">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo/Perfil -->
+      <div class="flex items-center gap-4">
+        <img
+          src="/src/assets/b47cc05724a147de53c3b78cacf6c96532e1c27b.png"
+          alt="Akel Ramirez Campo"
+          class="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-2 border-[#018790] shadow-lg"
+          style="max-width:80px; max-height:80px;"
+        />
+        <div>
+          <h1 class="text-lg md:text-xl font-bold text-gray-900">
+            Akel Ramirez Campo
+          </h1>
+          <p class="text-sm text-gray-600">Programador Web</p>
+        </div>
+      </div>
+
+      <!-- Navegación Desktop -->
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="#about" class="text-gray-700 hover:text-[#018790] transition-colors">
+          Sobre Mí
+        </a>
+        <a href="#skills" class="text-gray-700 hover:text-[#018790] transition-colors">
+          Habilidades
+        </a>
+        <a href="#projects" class="text-gray-700 hover:text-[#018790] transition-colors">
+          Proyectos
+        </a>
+        <a href="#contact" class="text-gray-700 hover:text-[#018790] transition-colors">
+          Contacto
+        </a>
+      </nav>
+
+      <!-- Redes Sociales Desktop -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a
+          href="https://github.com/akelramirez"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="p-2 bg-[#005461] text-white rounded-full hover:bg-[#018790] transition-colors"
+          aria-label="GitHub"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/akel-ramirez/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="p-2 bg-[#018790] text-white rounded-full hover:bg-[#00B7B5] transition-colors"
+          aria-label="LinkedIn"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><circle cx="8" cy="8" r="4"/><rect x="2" y="20" width="4" height="4"/></svg>
+        </a>
+        <a
+          href="mailto:akel.ramirez@gmail.com"
+          class="p-2 bg-[#00B7B5] text-white rounded-full hover:bg-[#018790] transition-colors"
+          aria-label="Email"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+
+      <!-- Botón menú móvil -->
+      <button id="menu-btn" class="md:hidden p-2 text-gray-700" aria-label="Toggle menu">
+        <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+      <nav class="flex flex-col gap-3 mb-4">
+        <a href="#about" class="text-gray-700 hover:text-[#018790] transition-colors py-2">Sobre Mí</a>
+        <a href="#skills" class="text-gray-700 hover:text-[#018790] transition-colors py-2">Habilidades</a>
+        <a href="#projects" class="text-gray-700 hover:text-[#018790] transition-colors py-2">Proyectos</a>
+        <a href="#contact" class="text-gray-700 hover:text-[#018790] transition-colors py-2">Contacto</a>
+      </nav>
+      <div class="flex gap-3 pt-3 border-t border-gray-200">
+        <a href="https://github.com/akelramirez" target="_blank" rel="noopener noreferrer" class="p-2 bg-[#005461] text-white rounded-full hover:bg-[#018790] transition-colors" aria-label="GitHub">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.115 2.51.337 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/akel-ramirez/" target="_blank" rel="noopener noreferrer" class="p-2 bg-[#018790] text-white rounded-full hover:bg-[#00B7B5] transition-colors" aria-label="LinkedIn">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><circle cx="8" cy="8" r="4"/><rect x="2" y="20" width="4" height="4"/></svg>
+        </a>
+        <a href="mailto:akel.ramirez@gmail.com" class="p-2 bg-[#00B7B5] text-white rounded-full hover:bg-[#018790] transition-colors" aria-label="Email">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const menuIcon = document.getElementById('menu-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && menuIcon && closeIcon && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        if (isOpen) {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        } else {
+          mobileMenu.classList.remove('hidden');
+          menuIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+        }
+      });
+    }
+  </script>
+</header>

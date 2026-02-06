@@ -1,0 +1,30 @@
+---
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import Projects from '../components/Projects.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio - Akel Ramirez</title>
+    <link rel="stylesheet" href="/src/styles/globals.css" />
+    <link rel="stylesheet" href="/src/styles/responsive.css" />
+  </head>
+  <body class="bg-gradient-to-br from-[#0C2C55] to-[#296374] min-h-screen">
+    <Header />
+    <main class="pt-24">
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </main>
+    <Footer />
+  </body>
+</html>

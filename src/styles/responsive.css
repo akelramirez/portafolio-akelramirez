@@ -1,0 +1,48 @@
+/* Estilos responsivos para el portafolio Astro */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .md\:flex, .md\:grid, .md\:block {
+    display: block !important;
+  }
+  .md\:text-xl {
+    font-size: 1.2rem !important;
+  }
+  .md\:text-2xl {
+    font-size: 1.5rem !important;
+  }
+  .md\:text-4xl {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.1rem;
+  }
+  .container {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+  img, .rounded-full {
+    width: 48px !important;
+    height: 48px !important;
+  }
+  .text-lg, .md\:text-lg {
+    font-size: 1rem !important;
+  }
+}
